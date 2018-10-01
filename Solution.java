@@ -6,7 +6,6 @@ public class Solution {
 
 	static int getMinimumCost(int numberOfFriends, int[] originalPricesOfFlowers) {
 
-		Arrays.sort(originalPricesOfFlowers);
 		int numberOfPurchasesOfMoreThanOneFlower = originalPricesOfFlowers.length - numberOfFriends;
 
 		/**
@@ -16,6 +15,8 @@ public class Solution {
 		if (numberOfPurchasesOfMoreThanOneFlower <= 0) {
 			return minimumCost;
 		}
+
+		Arrays.sort(originalPricesOfFlowers);
 
 		/**
 		 * If the number of purchases of more than one flower is less than the number of
