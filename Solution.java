@@ -20,7 +20,7 @@ public class Solution {
 
 		/**
 		 * If the number of purchases of more than one flower is less than the number of
-		 * friends, some or all of the friends will buy maximum two flowers. In this
+		 * friends, some or all of the friends will buy exactly two flowers. In this
 		 * case the iteration have to start from the lowest price since there is only
 		 * one addition to the purchasing price that equals 1.
 		 */
@@ -39,8 +39,8 @@ public class Solution {
 		 * If the number of purchases of more than one flower is greater than the number
 		 * of friends, some or all of the friends will buy more than two flowers. In
 		 * this case the iteration have to start from the highest price, thus the
-		 * smaller additions for more than one purchase are coupled with the highest
-		 * prices.
+		 * smaller additions to the price for more than one purchase are coupled with
+		 * the highest prices.
 		 */
 		int indexOfAdditionalPurchase = numberOfPurchasesOfMoreThanOneFlower - 1;
 		int peoplePurchasingMoreThanOnce = 0;
